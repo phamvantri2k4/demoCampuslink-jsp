@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <servlet>
+        <servlet-name>NhapThongTinServlet</servlet-name>
+        <servlet-class>main.java.com.xyz.controller.NhapThongTinServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NhapThongTinServlet</servlet-name>
+        <url-pattern>/NhapThongTinServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>TimKiemCoBanServlet</servlet-name>
+        <servlet-class>main.java.com.xyz.controller.TimKiemCoBanServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TimKiemCoBanServlet</servlet-name>
+        <url-pattern>/TimKiemCoBanServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>TimKiemViecLamServlet</servlet-name>
+        <servlet-class>main.java.com.xyz.controller.TimKiemViecLamServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TimKiemViecLamServlet</servlet-name>
+        <url-pattern>/TimKiemViecLamServlet</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>trangChuTruong.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
